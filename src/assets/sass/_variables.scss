@@ -1,0 +1,46 @@
+//== Color Variables
+$base1: #2fa5eb;
+$base2: #384047;
+$bg: #eef0fd;
+$white: #fff;
+$black: #000000;
+$border1: #e8e9ea;
+$shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+$p: #717f86;
+
+//== Typography
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto:300i,400,400i,500,500i,700,700i,900");
+$font1: "Roboto", sans-serif;
+$font2: "Raleway", sans-serif;
+
+//== Arial Font Family
+$light: Arial Light; //Arial Light
+$reg: Arial Regular; // Arial Regular
+$med: Arial Medium; // Arial Medium
+$bold: Arial Bold; // Arial Bold
+$cereg: Arial Ce Regular; //Arial CE Regular
+$cemed: Arial Ce Medium; // Arial CE Medium
+$boldit: Arial Bold Italic; // Arial Bold Italic
+
+//== Font Size Veriables
+$f1: 14px !default;
+$f2: ceil(($f1 * 1.14)) !default; // ~16px-f2
+$f3: ceil(($f1 * 1.07)) !default; // ~15px-f3
+$h1: floor(($f1 * 2.85)) !default; // ~40px-h1
+$h2: floor(($f1 * 2.57)) !default; // ~36px-h2
+$h3: ceil(($f1 * 2.14)) !default; // ~30px-h3
+$h4: ceil(($f1 * 1.71)) !default; // ~24px-h4
+$h5: ceil(($f1 * 1.42)) !default; // ~20px-h5
+$h6: ceil(($f1 * 1.28)) !default; // ~18px-h6
+
+//==  Unit-less `line-height`
+$line: 1.15 !default; // 24/14
+
+//== border-radius
+$border-radius-base: 2px !default;
+$border-radius-large: 6px !default;
+$border-radius-small: 3px !default;
+$radius-circle: 50% !default;
+
+//== transition
+$transition: all 0.4s ease-in-out;
