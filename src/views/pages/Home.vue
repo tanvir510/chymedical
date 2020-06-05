@@ -1,11 +1,15 @@
 <template>
   <div class="home">
-    <h1 class="title">This is Home page</h1>
+    <HomeBanner />
   </div>
 </template>
 
 <script>
+import HomeBanner from "../../components/HomeBanner";
 export default {
-  name: "Home"
+  name: "Home",
+  components: {
+    HomeBanner
+  }
 };
 </script>
