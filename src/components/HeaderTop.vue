@@ -8,18 +8,16 @@
               <i class="fas fa-map-marker-alt"></i>701 Shadow Ln, Las Vegas, NV
               89106
             </li>
-            <li><i class="fas fa-phone-alt"></i>1 (800) 233-2742</li>
-            <li><i class="far fa-envelope"></i>info@example.com</li>
+            <li>
+              <i class="fas fa-phone-alt"></i>1 (800) 233-2742
+            </li>
+            <li>
+              <i class="far fa-envelope"></i>info@example.com
+            </li>
           </ul>
         </div>
         <div class="right_content">
-          <ul class="social_list">
-            <li v-for="(social, index) in socials" :key="index">
-              <a :href="social.url" target="_blank">
-                <i :class="social.name"></i>
-              </a>
-            </li>
-          </ul>
+          <SocialList />
         </div>
       </div>
     </div>
@@ -27,33 +25,11 @@
 </template>
 
 <script>
+import SocialList from "../components/reusable/SocialList";
 export default {
-  data() {
-    return {
-      socials: [
-        {
-          name: "fab fa-facebook-f",
-          url: "https://www.facebook.com",
-        },
-        {
-          name: "fab fa-twitter",
-          url: "https://www.twitter.com",
-        },
-        {
-          name: "fab fa-linkedin-in",
-          url: "https://www.linkedin.com",
-        },
-        {
-          name: "fab fa-pinterest-p",
-          url: "https://www.pinterest.com/",
-        },
-        {
-          name: "fab fa-google-plus-g",
-          url: "https://www.google.com",
-        },
-      ],
-    };
-  },
+  components: {
+    SocialList
+  }
 };
 </script>
 

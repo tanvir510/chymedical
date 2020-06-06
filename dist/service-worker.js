@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.f2c9f6bf091ffe7db8a943d8b9897bd4.js"
+  "/precache-manifest.0e237f6ae653293bed45c48490443309.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "ChyMedical"});

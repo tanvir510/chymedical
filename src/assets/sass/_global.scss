@@ -2,3 +2,19 @@
   max-width: 1140px;
   margin: 0 auto;
 }
+.custom_btn {
+  height: 40px;
+  padding: 8px 20px;
+  border: 2px solid transparent;
+  font-size: 13px;
+  line-height: 20px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: $transition;
+  background: transparent;
+}
+.section_padding {
+  padding: 60px 0px;
+}

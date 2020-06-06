@@ -1,5 +1,5 @@
 <template>
-  <div class="contact_page">
+  <div class="emergency_page">
     <PageHeader />
     <Upcoming />
   </div>

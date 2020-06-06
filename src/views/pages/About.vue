@@ -1,11 +1,17 @@
 <template>
-  <div class="about">
-    <h1 class="title">This is About page</h1>
+  <div class="about_page">
+    <PageHeader />
+    <Upcoming />
   </div>
 </template>
 
 <script>
+import PageHeader from "../../components/reusable/PageHeader";
+import Upcoming from "../../components/reusable/Upcoming";
 export default {
-  name: "about"
+  components: {
+    PageHeader,
+    Upcoming
+  }
 };
 </script>

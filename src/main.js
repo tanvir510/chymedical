@@ -5,7 +5,8 @@ import router from "./router";
 import store from "./store";
 import VueAwesomeSwiper from "vue-awesome-swiper";
 
-// import swiper style
+// import css style
+import "./assets/css/font.css";
 import "swiper/css/swiper.css";
 
 Vue.use(VueAwesomeSwiper);

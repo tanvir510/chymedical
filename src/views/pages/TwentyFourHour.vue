@@ -1,5 +1,5 @@
 <template>
-  <div class="contact_page">
+  <div class="twenty_four_page">
     <PageHeader />
     <Upcoming />
   </div>

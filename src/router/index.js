@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 import Home from "../views/pages/Home.vue";
 import About from "../views/pages/About.vue";
 import Contact from "../views/pages/Contact.vue";
+import Emergency from "../views/pages/Emergency.vue";
+import TwentyFourHour from "../views/pages/TwentyFourHour.vue";
 
 Vue.use(VueRouter);
 
@@ -13,14 +15,24 @@ const routes = [
     component: Home,
   },
   {
-    path: "/about",
-    name: "About",
+    path: "/about-us",
+    name: "About Us",
     component: About,
   },
   {
     path: "/contact",
     name: "Contact",
     component: Contact,
+  },
+  {
+    path: "/emergency",
+    name: "Emergency",
+    component: Emergency,
+  },
+  {
+    path: "/twenty-four-hour",
+    name: "24 Hour Service",
+    component: TwentyFourHour,
   },
 ];
 
