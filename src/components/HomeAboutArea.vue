@@ -94,6 +94,10 @@ export default {
     }
     .about_thumb {
       width: 50%;
+      display: flex;
+      img {
+        width: 100%;
+      }
     }
   }
 }

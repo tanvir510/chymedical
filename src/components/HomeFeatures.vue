@@ -2,19 +2,49 @@
   <div class="feature_area section_padding">
     <div class="container">
       <SectionHeading title="Why Choose Us" subtitle="Our Features" />
-      <div class="wrapper_div"></div>
+      <div class="feature_element">
+        <div
+          class="feature_item"
+          v-for="(feature, index) in features"
+          :key="index"
+        >
+          <div class="feature_icon">
+            <i :class="feature.icon"></i>
+          </div>
+          <div class="feature_content">
+            <h5 class="title">{{ feature.title }}</h5>
+            <p class="desc">{{ feature.desc }}</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import SectionHeading from "../components/reusable/SectionHeading";
+import features from "../json/feature";
 export default {
   components: {
-    SectionHeading
-  }
+    SectionHeading,
+  },
+  data() {
+    return {
+      features: features,
+    };
+  },
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.feature_area {
+  background: #eef0fd;
+  .feature_element {
+    display: flex;
+    flex-wrap: wrap;
+    .feature_item {
+      flex: 1 1 33.33%;
+    }
+  }
+}
 </style>

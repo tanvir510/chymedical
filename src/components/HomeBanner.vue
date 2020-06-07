@@ -2,17 +2,21 @@
   <div class="banner">
     <div v-swiper:mySwiper="swiperOption">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" :key="index" v-for="(banner, index) in banners">
+        <div
+          class="swiper-slide"
+          :key="index"
+          v-for="(banner, index) in banners"
+        >
           <img :src="getBanner(banner.img)" />
           <div class="banner_element">
             <div class="container">
               <div class="banner_content">
-                <h3 class="title">{{banner.title}}</h3>
+                <h3 class="title">{{ banner.title }}</h3>
                 <h1 class="heading">
-                  {{banner.heading}}
-                  <span class="bold_text">{{banner.bold}}</span>
+                  {{ banner.heading }}
+                  <span class="bold_text">{{ banner.bold }}</span>
                 </h1>
-                <p class="para">{{banner.para}}</p>
+                <p class="para">{{ banner.para }}</p>
               </div>
             </div>
           </div>
@@ -36,7 +40,7 @@ import banners from "../json/banner";
 import HomeSchedule from "./HomeSchedule";
 export default {
   components: {
-    HomeSchedule
+    HomeSchedule,
   },
   data() {
     return {
@@ -46,10 +50,10 @@ export default {
         loop: true,
         navigation: {
           nextEl: ".swiper-custom-button-next",
-          prevEl: ".swiper-custom-button-prev"
-        }
+          prevEl: ".swiper-custom-button-prev",
+        },
         // ...
-      }
+      },
     };
   },
   mounted() {
@@ -58,8 +62,8 @@ export default {
   methods: {
     getBanner(src) {
       return require("../assets/images/banner/" + src);
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -110,6 +114,7 @@ export default {
 // Swiper slider code here
 .swiper-slide {
   overflow: hidden;
+  display: flex;
   &:after {
     position: absolute;
     content: "";
