@@ -2,11 +2,7 @@
   <div class="banner">
     <div v-swiper:mySwiper="swiperOption">
       <div class="swiper-wrapper">
-        <div
-          class="swiper-slide"
-          :key="index"
-          v-for="(banner, index) in banners"
-        >
+        <div class="swiper-slide" :key="index" v-for="(banner, index) in banners">
           <img :src="getBanner(banner.img)" />
           <div class="banner_element">
             <div class="container">
@@ -36,11 +32,11 @@
 </template>
 
 <script>
-import banners from "../json/banner";
-import HomeSchedule from "./HomeSchedule";
+import banners from "../../json/banner";
+import HomeSchedule from "../home/HomeSchedule";
 export default {
   components: {
-    HomeSchedule,
+    HomeSchedule
   },
   data() {
     return {
@@ -50,10 +46,10 @@ export default {
         loop: true,
         navigation: {
           nextEl: ".swiper-custom-button-next",
-          prevEl: ".swiper-custom-button-prev",
-        },
+          prevEl: ".swiper-custom-button-prev"
+        }
         // ...
-      },
+      }
     };
   },
   mounted() {
@@ -61,13 +57,13 @@ export default {
   },
   methods: {
     getBanner(src) {
-      return require("../assets/images/banner/" + src);
-    },
-  },
+      return require("../../assets/images/banner/" + src);
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
-@import "../assets/sass/_variables.scss";
+@import "../../assets/sass/_variables.scss";
 // Banner part scss code here
 .banner {
   overflow: hidden;

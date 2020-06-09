@@ -20,7 +20,7 @@
           </ul>
         </div>
         <div class="about_thumb">
-          <img src="../assets/images/about/about-area.png" alt="about-area" />
+          <img src="../../assets/images/about/about-area.png" alt="about-area" />
         </div>
       </div>
     </div>

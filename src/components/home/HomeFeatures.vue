@@ -1,5 +1,5 @@
 <template>
-  <div class="feature_area section_padding">
+  <div class="feature_area section_padding bg_sky">
     <div class="container">
       <SectionHeading title="Why Choose Us" subtitle="Our Features" />
       <div class="feature_element">
@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import SectionHeading from "../components/reusable/SectionHeading";
-import features from "../json/feature";
+import SectionHeading from "../../components/reusable/SectionHeading";
+import features from "../../json/feature";
 export default {
   components: {
     SectionHeading
@@ -34,7 +34,6 @@ export default {
 
 <style lang="scss" scoped>
 .feature_area {
-  background: #eef0fd;
   .feature_element {
     display: flex;
     flex-wrap: wrap;
