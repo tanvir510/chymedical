@@ -43,6 +43,12 @@ export default {
       box-sizing: border-box;
       display: flex;
       margin-bottom: 25px;
+      &:nth-child(3n + 1) {
+        padding-left: 0px !important;
+      }
+      &:nth-child(3n) {
+        padding-right: 0px !important;
+      }
       &:nth-last-child(-n + 3) {
         margin-bottom: 0px;
         padding-bottom: 0px;

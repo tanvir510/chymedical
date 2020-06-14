@@ -54,6 +54,12 @@ export default {
     flex: 33.33%;
     box-sizing: border-box;
     padding: 15px;
+    &:nth-child(3n + 1) {
+      padding-left: 0px !important;
+    }
+    &:nth-child(3n) {
+      padding-right: 0px !important;
+    }
     &:hover {
       .service_content {
         &:after {
@@ -69,6 +75,7 @@ export default {
       display: flex;
       img {
         width: 100%;
+        height: 242px;
       }
     }
     .service_content {

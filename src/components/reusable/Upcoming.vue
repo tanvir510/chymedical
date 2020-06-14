@@ -12,7 +12,7 @@
         </div>
         <div class="contact">
           <span>Feel free to know:</span>
-          <SocialList />
+          <SocialList :socials="socials" />
         </div>
         <div class="back_btn">
           <router-link to="/" class="custom_btn">Go Back Home</router-link>
@@ -24,9 +24,15 @@
 
 <script>
 import SocialList from "../reusable/SocialList";
+import socials from "../../json/social";
 export default {
   components: {
     SocialList
+  },
+  data() {
+    return {
+      socials: socials
+    };
   }
 };
 </script>

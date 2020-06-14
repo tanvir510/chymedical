@@ -9,11 +9,14 @@
 </template>
 
 <script>
-import socials from "../../json/social";
 export default {
+  props: {
+    socials: Array,
+    default: () => []
+  },
   data() {
     return {
-      socials: socials
+      socials: this.socials
     };
   }
 };

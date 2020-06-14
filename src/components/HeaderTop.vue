@@ -17,7 +17,7 @@
           </ul>
         </div>
         <div class="right_content">
-          <SocialList />
+          <SocialList :socials="socials" />
         </div>
       </div>
     </div>
@@ -26,7 +26,13 @@
 
 <script>
 import SocialList from "../components/reusable/SocialList";
+import socials from "../json/social";
 export default {
+  data() {
+    return {
+      socials: socials
+    };
+  },
   components: {
     SocialList
   }
