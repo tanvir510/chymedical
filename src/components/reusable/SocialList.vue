@@ -16,7 +16,7 @@ export default {
   },
   data() {
     return {
-      socials: this.socials
+      // socials: this.socials
     };
   }
 };

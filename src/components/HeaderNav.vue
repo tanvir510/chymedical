@@ -20,7 +20,55 @@
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    this.scrollNavbar();
+  },
+  methods: {
+    scrollNavbar() {
+      var header = document.querySelector(".header_nav");
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 70) {
+          header.classList.add("menu-fixed", "fade_in_down");
+        } else {
+          header.classList.remove("menu-fixed", "fade_in_down");
+        }
+      });
+    }
+  }
+};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.menu-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+// fadeInDown Animation code here
+.fade_in_down {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+</style>

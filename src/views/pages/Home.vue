@@ -6,6 +6,7 @@
     <HomeService />
     <HomeVideo />
     <HomeContact />
+    <HomeTeam />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import HomeFeatures from "../../components/home/HomeFeatures";
 import HomeService from "../../components/home/HomeService";
 import HomeVideo from "../../components/home/HomeVideo";
 import HomeContact from "../../components/home/HomeContact";
+import HomeTeam from "../../components/home/HomeTeam";
 export default {
   name: "Home",
   components: {
@@ -24,7 +26,8 @@ export default {
     HomeFeatures,
     HomeService,
     HomeVideo,
-    HomeContact
+    HomeContact,
+    HomeTeam
   }
 };
 </script>

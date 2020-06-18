@@ -17,7 +17,7 @@ export default {
 <style lang="scss" scoped>
 .section_heading {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   .subtitle {
     color: #717f86;
     font-size: 15px;
